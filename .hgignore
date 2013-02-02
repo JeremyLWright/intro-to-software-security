@@ -1,0 +1,3 @@
+syntax: glob
+Lab/Client/OTP-Tool-build-Desktop_Qt_5_0_1_MinGW_32bit-*
+Lab/Client/OTP-Tool/OTP-Tool.pro.user
