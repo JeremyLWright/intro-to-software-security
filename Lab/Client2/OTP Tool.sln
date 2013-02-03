@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP Tool", "OTP_Tool\OTP To
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP_Locker", "OTP_Locker\OTP_Locker.csproj", "{77DAAB54-E7DA-4DB4-9BE5-B8B0C9246AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTPUtilities", "OTPUtilities\OTPUtilities.csproj", "{5C34782E-102F-42D0-A382-7BF529A3EDFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTPHelpers", "OTPHelpers\OTPHelpers.csproj", "{3E7E2B78-0F38-4D27-B338-59EB7563C690}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,10 @@ Global
 		{77DAAB54-E7DA-4DB4-9BE5-B8B0C9246AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77DAAB54-E7DA-4DB4-9BE5-B8B0C9246AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77DAAB54-E7DA-4DB4-9BE5-B8B0C9246AC8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C34782E-102F-42D0-A382-7BF529A3EDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C34782E-102F-42D0-A382-7BF529A3EDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C34782E-102F-42D0-A382-7BF529A3EDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C34782E-102F-42D0-A382-7BF529A3EDFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7E2B78-0F38-4D27-B338-59EB7563C690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7E2B78-0F38-4D27-B338-59EB7563C690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7E2B78-0F38-4D27-B338-59EB7563C690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7E2B78-0F38-4D27-B338-59EB7563C690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

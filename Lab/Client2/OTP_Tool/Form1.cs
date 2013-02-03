@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.IO;
 using System.Diagnostics;
+using OTPHelpers;
 
 namespace WindowsFormsApplication1
 {
@@ -95,24 +96,8 @@ namespace WindowsFormsApplication1
         {
             if (currentinput.MyString == null)
                 return;
-                        
-            HMACSHA1 hmac_sha1 = new HMACSHA1(Encoding.ASCII.GetBytes("VjXb38Zn7H6wnvBlczkY"));
-            var salt = SHA1.Create().ComputeHash(Encoding.ASCII.GetBytes(currentinput.MyString));
-            hmac_sha1.Initialize();
 
-            var hashBytes = hmac_sha1.ComputeHash(salt);
-            
-            // Use a bitwise operation to get a representative binary code from the hash
-            // Refer section 5.4 at http://tools.ietf.org/html/rfc4226#page-7            
-            int offset = hashBytes[19] & 0xf;
-            int binaryCode = (hashBytes[offset] & 0x7f) << 24
-                | (hashBytes[offset + 1] & 0xff) << 16
-                | (hashBytes[offset + 2] & 0xff) << 8
-                | (hashBytes[offset + 3] & 0xff);
-            
-            int otp = binaryCode % (int)Math.Pow(10, 8); // where 8 is the password length
-
-            currentinput.Hash = otp.ToString().PadLeft(8, '0');
+            currentinput.Hash = OTPChecker.GetOTP(OTPChecker.UserVerificationKey, currentinput.MyString);
         }
 
         private StringWithEvent currentinput;

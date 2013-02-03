@@ -201,7 +201,7 @@
             // 
             // button10
             // 
-           
+            this.button10.Image = global::WindowsFormsApplication1.Properties.Resources.closed;
             this.button10.Location = new System.Drawing.Point(3, 209);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(88, 47);
@@ -212,7 +212,7 @@
             // button_calculate
             // 
             this.button_calculate.Dock = System.Windows.Forms.DockStyle.Fill;
-            
+            this.button_calculate.Image = global::WindowsFormsApplication1.Properties.Resources._lock;
             this.button_calculate.Location = new System.Drawing.Point(191, 209);
             this.button_calculate.Name = "button_calculate";
             this.button_calculate.Size = new System.Drawing.Size(90, 49);
