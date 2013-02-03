@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Encryptor.cs" />
     <Compile Include="Icons.Designer.cs">
       <DependentUpon>Icons.resx</DependentUpon>
       <AutoGen>True</AutoGen>

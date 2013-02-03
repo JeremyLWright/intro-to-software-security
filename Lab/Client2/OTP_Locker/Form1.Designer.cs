@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox_filename = new System.Windows.Forms.TextBox();
@@ -37,9 +38,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.button_encrypt = new System.Windows.Forms.Button();
             this.button_decrypt = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,26 +142,6 @@
             this.label3.Text = "OTP: ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button_encrypt
-            // 
-            this.button_encrypt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_encrypt.Image = global::OTP_Locker.Properties.Resources._lock;
-            this.button_encrypt.Location = new System.Drawing.Point(3, 110);
-            this.button_encrypt.Name = "button_encrypt";
-            this.button_encrypt.Size = new System.Drawing.Size(136, 148);
-            this.button_encrypt.TabIndex = 8;
-            this.button_encrypt.UseVisualStyleBackColor = true;
-            // 
-            // button_decrypt
-            // 
-            this.button_decrypt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_decrypt.Image = global::OTP_Locker.Properties.Resources.un_lock;
-            this.button_decrypt.Location = new System.Drawing.Point(145, 110);
-            this.button_decrypt.Name = "button_decrypt";
-            this.button_decrypt.Size = new System.Drawing.Size(136, 148);
-            this.button_decrypt.TabIndex = 9;
-            this.button_decrypt.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -172,14 +153,37 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button_encrypt
+            // 
+            this.button_encrypt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_encrypt.Image = global::OTP_Locker.Properties.Resources._lock;
+            this.button_encrypt.Location = new System.Drawing.Point(3, 110);
+            this.button_encrypt.Name = "button_encrypt";
+            this.button_encrypt.Size = new System.Drawing.Size(136, 148);
+            this.button_encrypt.TabIndex = 8;
+            this.button_encrypt.UseVisualStyleBackColor = true;
+            this.button_encrypt.Click += new System.EventHandler(this.button_encrypt_Click);
+            // 
+            // button_decrypt
+            // 
+            this.button_decrypt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_decrypt.Image = global::OTP_Locker.Properties.Resources.un_lock;
+            this.button_decrypt.Location = new System.Drawing.Point(145, 110);
+            this.button_decrypt.Name = "button_decrypt";
+            this.button_decrypt.Size = new System.Drawing.Size(136, 148);
+            this.button_decrypt.TabIndex = 9;
+            this.button_decrypt.UseVisualStyleBackColor = true;
+            this.button_decrypt.Click += new System.EventHandler(this.button_decrypt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CSE543 :: Locker";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
